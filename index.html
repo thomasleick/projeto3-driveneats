@@ -26,77 +26,86 @@
             <section>
                 <h3>Primeiro, seu prato</h3>
                 <div class="horizontal food">
-                    <div class="vertical">
+                    <div class="vertical food1" onclick="cliqueFood('food1')">
                         <img src=".\images\frango_yin_yang.png">
                         <h4>Frango Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
                         <div class="preco">R$ 14,90</div>
+                        <img class="svg food1" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical food2" onclick="cliqueFood('food2')">
                         <img src=".\images\frango_yin_yang.png">
-                        <h4>Frango Yin Yang</h4>
+                        <h4>Carne Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 20,90</div>
+                        <img class="svg food2" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical food3" onclick="cliqueFood('food3')">
                         <img src=".\images\frango_yin_yang.png">
-                        <h4>Frango Yin Yang</h4>
+                        <h4>Peixe Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 22,90</div>
+                        <img class="svg food3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
             </section>
             <section>
                 <h3>Agora, sua bebida</h3>
                 <div class="horizontal">
-                    <div class="vertical">
+                    <div class="vertical drink1" onclick="cliqueDrink('drink1')">
                         <img src=".\images\coca-cola.png">                    
                         <h4>Coquinha gelada</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 5,90</div>
+                        <img class="svg drink1" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical drink2" onclick="cliqueDrink('drink2')">
                         <img src=".\images\coca-cola.png">
-                        <h4>Coquinha gelada</h4>
+                        <h4>Guaraná gelado</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 5,50</div>
+                        <img class="svg drink2" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical drink3" onclick="cliqueDrink('drink3')">
                         <img src=".\images\coca-cola.png">
-                        <h4>Coquinha gelada</h4>
+                        <h4>Suquinho gelado</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 6,90</div>
+                        <img class="svg drink3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
             </section>
             <section>
                 <h3>Por fim, sua sobremesa</h3>
                 <div class="horizontal">
-                    <div class="vertical">
+                    <div class="vertical dessert1" onclick="cliqueDessert('dessert1')">
                         <img src=".\images\pudim.png">
                         <h4>Pudim</h4>
                         <p>Apenas pudim</p>
-                        <div class="preco">R$ 14,90</div>
+                        <div class="preco">R$ 9,90</div>
+                        <img class="svg dessert1" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical dessert2" onclick="cliqueDessert('dessert2')">
                         <img src=".\images\pudim.png">
-                        <h4>Pudim</h4>
-                        <p>Apenas pudim</p>
-                        <div class="preco">R$ 14,90</div>
+                        <h4>Sorvete</h4>
+                        <p>Apenas sorvete</p>
+                        <div class="preco">R$ 11,90</div>
+                        <img class="svg dessert2" src=".\images\check.svg" alt="Selecionado">
                     </div>
-                    <div class="vertical">
+                    <div class="vertical dessert3" onclick="cliqueDessert('dessert3')">
                         <img src=".\images\pudim.png">
-                        <h4>Pudim</h4>
-                        <p>Apenas pudim</p>
-                        <div class="preco">R$ 14,90</div>
+                        <h4>Mousse</h4>
+                        <p>Apenas mousse</p>
+                        <div class="preco">R$ 8,90</div>
+                        <img class="svg dessert3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
             </section>
         </main>
     </body>
         <footer>
-            <button class="locked" disabled="true">Selecione os 3 itens <br />para fechar o pedido</button>
+            <button id="order" class="locked" disabled="true" onclick="sendOrder()">Selecione os 3 itens <br />para fechar o pedido</button>
         </footer>
 
-    
+    <script src="index.js"></script>
 </html>
