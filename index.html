@@ -102,10 +102,37 @@
                 </div>
             </section>
         </main>
+
+        <div class="white" id="white">
+        </div>
+        <div class="green" id="green">
+            <h5>Confirme seu pedido</h5>
+            <br />
+            <div class="horiz">
+                <div class="vert l">
+                    <p id="foodName">Comida</p>
+                    <p id="drinkName">Bebida</p>
+                    <p id="dessertName">Sobremesa</p>
+                    <p><b>TOTAL</b></p>
+                </div>
+                    
+                <div class="vert r">
+                    <p id="foodValue">R$ 00,00</p>
+                    <p id="drinkValue">R$ 00,00</p>
+                    <p id="dessertValue">R$ 00,00</p>
+                    <p id="total"><b>R$ 00,00</b></p>
+                </div>
+            </div>
+            <br /> <br />
+            <button onclick="confirmOrder()">Tudo certo, pode pedir!</button>
+            <p class="cancel" onclick="cancelOrder()">Cancelar</p>
+        </div>
+        
     </body>
-        <footer>
-            <button id="order" class="locked" disabled="true" onclick="sendOrder()">Selecione os 3 itens <br />para fechar o pedido</button>
-        </footer>
+    
+    <footer>
+        <button id="order" class="locked" disabled="true" onclick="sendOrder()">Selecione os 3 itens <br />para fechar o pedido</button>
+    </footer>
 
     <script src="index.js"></script>
 </html>
