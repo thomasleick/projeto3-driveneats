@@ -2,6 +2,10 @@ let food = null;
 let drink = null;
 let dessert = null;
 
+const phone = 5511999999999;
+
+let msg = ``;
+
 const c1 = {name:"Frango Yin Yang", price:14.90};
 const c2 = {name:"Carne Yin Yang", price:20.90};
 const c3 = {name:"Peixe Yin Yang", price:22.90};
@@ -89,6 +93,26 @@ function cliqueFood(c) {
 }
 
 function sendOrder() {
-    console.log(`Pedir ${food.name}, ${drink.name} e ${dessert.name}`)
-    console.log(`Total de ${parseFloat(food.price + drink.price + dessert.price).toFixed(2)}`)
+    const total = parseFloat(food.price + drink.price + dessert.price).toFixed(2);
+    document.getElementById("foodName").innerHTML = `${food.name}`;
+    document.getElementById("foodValue").innerHTML = `R$ ${parseFloat(food.price).toFixed(2)}`;
+    document.getElementById("drinkName").innerHTML = `${drink.name}`;
+    document.getElementById("drinkValue").innerHTML = `R$ ${parseFloat(drink.price).toFixed(2)}`;
+    document.getElementById("dessertName").innerHTML = `${dessert.name}`;
+    document.getElementById("dessertValue").innerHTML = `R$ ${parseFloat(dessert.price).toFixed(2)}`;
+    document.getElementById("total").innerHTML = `<b>R$ ${total}</b>`;
+
+    document.getElementById("white").style.visibility = "visible"
+    document.getElementById("green").style.visibility = "visible"
+
+    msg = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${food.name} \n - Bebida: ${drink.name} \n - Sobremesa: ${dessert.name} \n Total: R$ ${total}`);
+}
+
+function cancelOrder() {
+    document.getElementById("white").style.visibility = "hidden"
+    document.getElementById("green").style.visibility = "hidden"
+}
+
+function confirmOrder() {
+    location.href=`https://wa.me/${phone}?text=${msg}`
 }

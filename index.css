@@ -59,7 +59,7 @@ main section {
     display: flex;
     align-items: left;
     justify-content: center;
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y: hidden;
 }
 
@@ -172,4 +172,116 @@ footer button {
 
 .locked {
     background: #CBCBCB;
+}
+
+
+.white {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0.9;
+    background-color: #ffffff;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.green {
+    position: fixed;
+    top: calc(50% - 177px);
+    left: 21px;
+    background-color: rgb(80, 208, 116, 1);
+    width: calc(100vw - 84px);
+    height: 348px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-between;
+    z-index: 3;
+    padding: 21px 21px;
+    visibility: hidden;
+}
+
+.horiz {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 147px;
+}
+
+.l {
+    align-items: flex-start;
+}
+
+.r {
+    align-items: flex-end;
+}
+
+
+h5 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.horiz div p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.green button {
+    width: 100%;
+    height: 52px;
+    background: #FFFFFF;
+    border-radius: 100px;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #50D074;
+}
+
+.cancel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
+.cancel:hover {
+    color:grey;
+}
+
+.green b {
+    font-weight: 700;
 }
