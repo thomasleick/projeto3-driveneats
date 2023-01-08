@@ -57,8 +57,6 @@ main section {
     height: 202px;
     margin: 12px 21px;
     display: flex;
-    align-items: left;
-    justify-content: center;
     overflow-x: scroll;
     overflow-y: hidden;
 }
