@@ -7,8 +7,12 @@
 
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="index.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
         <style> @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&display=swap'); </style>
         <style> @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap'); </style>
         <title>projeto3-driveneats</title>
@@ -30,21 +34,21 @@
                         <img src=".\images\frango_yin_yang.png" alt="Frango">
                         <h4 data-test="item-name">Frango Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
-                        <div class="preco" data-test="ïtem-price">R$ 14,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">14.90</span></span>
                         <img class="svg food1" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="dish" class="vertical food2" onclick="cliqueFood('food2')">
                         <img src=".\images\frango_yin_yang.png" alt="Carne">
                         <h4 data-test="item-name">Carne Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
-                        <div class="preco" data-test="ïtem-price">R$ 20,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">20.90</span></span>
                         <img class="svg food2" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="dish" class="vertical food3" onclick="cliqueFood('food3')">
                         <img src=".\images\frango_yin_yang.png" alt="Peixe">
                         <h4 data-test="item-name">Peixe Yin Yang</h4>
                         <p>Um pouco de batata, <br />um pouco de salada</p>
-                        <div class="preco" data-test="ïtem-price">R$ 22,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">22.90</span></span>
                         <img class="svg food3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
@@ -56,21 +60,21 @@
                         <img src=".\images\coca-cola.png" alt="Coca">                    
                         <h4 data-test="item-name">Coquinha gelada</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco" data-test="ïtem-price">R$ 5,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">5.90</span></span>
                         <img class="svg drink1" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="drink" class="vertical drink2" onclick="cliqueDrink('drink2')">
                         <img src=".\images\coca-cola.png" alt="Guarana">
                         <h4 data-test="item-name">Guaraná gelado</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco" data-test="ïtem-price">R$ 5,50</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">5.50</span></span>
                         <img class="svg drink2" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="drink" class="vertical drink3" onclick="cliqueDrink('drink3')">
                         <img src=".\images\coca-cola.png" alt="Suco">
                         <h4 data-test="item-name">Suquinho gelado</h4>
                         <p>Lata 350ml</p>
-                        <div class="preco" data-test="ïtem-price">R$ 6,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">6.90</span></span>
                         <img class="svg drink3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
@@ -82,21 +86,21 @@
                         <img src=".\images\pudim.png" alt="Pudim">
                         <h4 data-test="item-name">Pudim</h4>
                         <p>Apenas pudim</p>
-                        <div class="preco" data-test="ïtem-price">R$ 9,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">9.90</span></span>
                         <img class="svg dessert1" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="dessert" class="vertical dessert2" onclick="cliqueDessert('dessert2')">
                         <img src=".\images\pudim.png" alt="Sorvete">
                         <h4 data-test="item-name">Sorvete</h4>
                         <p>Apenas sorvete</p>
-                        <div class="preco" data-test="ïtem-price">R$ 11,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">11.90</span></span>
                         <img class="svg dessert2" src=".\images\check.svg" alt="Selecionado">
                     </div>
                     <div data-test="dessert" class="vertical dessert3" onclick="cliqueDessert('dessert3')">
                         <img src=".\images\pudim.png" alt="Mousse">
                         <h4 data-test="item-name">Mousse</h4>
                         <p>Apenas mousse</p>
-                        <div class="preco" data-test="ïtem-price">R$ 8,90</div>
+                        <span>R$ <span class="preco" data-test="ïtem-price">8.90</span></span>
                         <img class="svg dessert3" src=".\images\check.svg" alt="Selecionado">
                     </div>
                 </div>
