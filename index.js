@@ -89,10 +89,12 @@ function cliqueFood(c) {
     if (food && drink && dessert){
         document.getElementById("order").classList.remove("locked");
         document.getElementById("order").removeAttribute("disabled");
+        document.getElementById("order").innerHTML = "Fechar pedido";
   }
 }
 
 function sendOrder() {
+
     const total = parseFloat(food.price + drink.price + dessert.price).toFixed(2);
     document.getElementById("foodName").innerHTML = `${food.name}`;
     document.getElementById("foodValue").innerHTML = `R$ ${parseFloat(food.price).toFixed(2)}`;
@@ -105,7 +107,7 @@ function sendOrder() {
     document.getElementById("white").style.visibility = "visible"
     document.getElementById("green").style.visibility = "visible"
 
-    msg = encodeURIComponent(`Olá, gostaria de fazer o pedido: \n - Prato: ${food.name} \n - Bebida: ${drink.name} \n - Sobremesa: ${dessert.name} \n Total: R$ ${total}`);
+    msg = `Olá, gostaria de fazer o pedido: \n - Prato: ${food.name} \n - Bebida: ${drink.name} \n - Sobremesa: ${dessert.name} \n Total: R$ ${total}`;
 }
 
 function cancelOrder() {
@@ -114,5 +116,11 @@ function cancelOrder() {
 }
 
 function confirmOrder() {
+
+    const name = window.prompt("Por favor, digite o seu nome completo:");
+    const address = window.prompt("Agora o seu endereço para entrega:");
+    
+    msg = encodeURIComponent(msg + `\n\nNome: ${name}\nEndereço: ${address}`);
+    
     location.href=`https://wa.me/${phone}?text=${msg}`
 }
