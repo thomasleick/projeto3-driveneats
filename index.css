@@ -1,6 +1,6 @@
 body {
     margin: 92px 0;
-    font-family: 'Encode Sans', sans-serif, 'Righteous', cursive, 'Roboto', sans-serif;
+    font-family: 'Encode Sans', sans-serif, 'Righteous', cursive, 'Roboto', Verdana, Tahoma, sans-serif;
 }
 
 header {
@@ -17,7 +17,7 @@ header {
 
 h1 {
     margin-left: 21px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 44px;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
     margin-left: 21px;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -99,7 +99,7 @@ main section {
 
 h3 {
     margin-left: 21px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -114,7 +114,7 @@ img {
 }
 
 h4 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -123,7 +123,7 @@ h4 {
 }
 
 p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 300;
     font-size: 15px;
@@ -132,7 +132,7 @@ p {
 }
 
 .preco{
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -160,7 +160,7 @@ footer button {
     width: calc(100% - 50px);
     height: 61px;
     color: #ffffff;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -232,7 +232,7 @@ footer button {
 
 
 h5 {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -242,7 +242,7 @@ h5 {
 }
 
 .horiz div p {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
@@ -257,7 +257,7 @@ h5 {
     background: #FFFFFF;
     border-radius: 100px;
     text-align: center;
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -267,7 +267,7 @@ h5 {
 }
 
 .cancel {
-    font-family: 'Roboto';
+    font-family: 'Roboto', Verdana;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
