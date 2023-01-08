@@ -30,12 +30,15 @@ function cliqueFood(c) {
     document.getElementsByClassName(c)[0].classList.add("selected");
     document.getElementsByClassName(c)[1].classList.add("checked");
 
-    if (c == "food1")
+    if (c === "food1") {
         food = c1;
-    if (c == "food2")
+    }
+    if (c === "food2") {
         food = c2;
-    if (c == "food3")
+    }
+    if (c === "food3") {
         food = c3;
+    }
 
     checkAll();
   }
@@ -52,13 +55,15 @@ function cliqueFood(c) {
     document.getElementsByClassName(c)[0].classList.add("selected");
     document.getElementsByClassName(c)[1].classList.add("checked");
 
-    if (c == "drink1")
+    if (c === "drink1") {
         drink = b1;
-    if (c == "drink2")
+    }
+    if (c === "drink2") {
         drink = b2;
-    if (c == "drink3")
+    }
+    if (c === "drink3") {
         drink = b3;
-
+    }
     checkAll();
   }
 
@@ -74,13 +79,15 @@ function cliqueFood(c) {
     document.getElementsByClassName(c)[0].classList.add("selected");
     document.getElementsByClassName(c)[1].classList.add("checked");
 
-    if (c == "dessert1")
+    if (c === "dessert1") {
         dessert = s1;
-    if (c == "dessert2")
+    }
+    if (c === "dessert2") {
         dessert = s2;
-    if (c == "dessert3")
+    }
+    if (c === "dessert3") {
         dessert = s3;
-
+    }
     checkAll();
   }
 
