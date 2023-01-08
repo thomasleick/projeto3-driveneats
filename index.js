@@ -107,7 +107,8 @@ function sendOrder() {
     document.getElementById("white").style.visibility = "visible"
     document.getElementById("green").style.visibility = "visible"
 
-    msg = `Olá, gostaria de fazer o pedido: \n - Prato: ${food.name} \n - Bebida: ${drink.name} \n - Sobremesa: ${dessert.name} \n Total: R$ ${total}`;
+    msg = `Olá, gostaria de fazer o pedido: \n - Prato: ${food.name} \n 
+        - Bebida: ${drink.name} \n - Sobremesa: ${dessert.name} \n Total: R$ ${total}`;
 }
 
 function cancelOrder() {
